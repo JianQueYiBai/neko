@@ -1,0 +1,26 @@
+.nBtn {
+  background: url("../../assets/btn1.png") no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  padding: 12px 36px;
+  color: black;
+  font-size: 14px;
+  font-family: BIG SHOT;
+  font-weight: 400;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  cursor: pointer;
+}
+
+.stakeBtn {
+}
+
+.lvBtn {
+}
+
+.unStakeBtn {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.longBtn {
+}
