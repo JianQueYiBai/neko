@@ -1,6 +1,5 @@
 .nBtn {
-  background: url("../../assets/btn1.png") no-repeat;
-  background-size: 100% 100%;
+
   text-align: center;
   padding: 12px 36px;
   color: black;
@@ -10,6 +9,19 @@
   text-transform: uppercase;
   word-wrap: break-word;
   cursor: pointer;
+  line-height: 1;
+  height: 36px;
+  display: inline-flex;
+
+}
+
+.yellowBtn , .shortBtn{
+    background: url("../../assets/btn-yellow-short.png") no-repeat;
+    background-size: 100% 100%;
+}
+.yellowBtn , .longBtn{
+    background: url("../../assets/btn-yellow-long.png") no-repeat;
+    background-size: 100% 100%;
 }
 
 .stakeBtn {
