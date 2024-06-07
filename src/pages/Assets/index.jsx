@@ -18,7 +18,7 @@ export default function Assets() {
           <InputCard />
         </Col>
         <Col className="gutter-row" xs={{ flex: "100%" }} sm={{ flex: "25%" }}>
-          <BoxCard title="Starter Pack" />
+          <BoxCard title="Starter Pack"  />
         </Col>
       </Row>
       <Row  style={{marginTop:'16px', marginBottom:'16px'}}>

@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 .app {
   background: linear-gradient(0deg, #032a39 0%, #032a39 100%);
   min-height: 100vh;
@@ -10,6 +11,7 @@
 .app-content {
   max-width: 1280px;
   margin: 0 auto;
+  padding: 16px;
 }
 
 .yellow-border {
@@ -37,6 +39,21 @@
   font-weight: 400;
   word-wrap: break-word;
 }
+.blue-text {
+  color: #01dce4;
+  font-size: 13px;
+  font-family: BIG SHOT;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.grey-text-little {
+  color: #90a6af;
+  font-size: 13px;
+  font-family: BIG SHOT;
+  font-weight: 400;
+  word-wrap: break-word;
+}
 
 .mobile-center {
   text-align: center;
@@ -58,15 +75,36 @@
   word-wrap: break-word;
 }
 
+.card-little-title {
+  color: white;
+  font-size: 16px;
+  font-family: BIG SHOT;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+.card-mini-title {
+  color: white;
+  font-size: 14px;
+  font-family: BIG SHOT;
+  font-weight: 400;
+  word-wrap: break-word;
+  margin-top: 10px;
+}
+
 .card-desc-title {
   color: #e9d78e;
-  font-size: 13px;
+  font-size: 14px;
   font-family: BIG SHOT;
   font-weight: 400;
   line-height: 20px;
   word-wrap: break-word;
 }
-
+.cards-wrapper{
+  padding: 32px 28px;
+  background: #1d3344;
+  position: relative;
+  height: 100%;
+}
 .flex {
   display: flex;
 }
@@ -101,10 +139,35 @@
   word-wrap: break-word;
 }
 
- .num-44-orange {
-  color: #EE761F;
+.num-44-orange {
+  color: #ee761f;
   font-size: 44px;
   font-family: BIG SHOT;
   font-weight: 400;
   word-wrap: break-word;
+}
+
+.back-btn{
+  color: #B6EAFF;
+ font-size: 16px;
+ font-family: BIG SHOT;
+ font-weight: 400;
+ text-transform: uppercase;
+ word-wrap: break-word;
+ cursor: pointer;
+ margin: 24px 0 16px;
+}
+.margin-top-16{
+  margin-top: 16px;
+}
+
+.margin-right-16{
+  margin-right: 16px;
+}
+
+
+.pc-app {
+  .pc-margin-right-16{
+    margin-right: 16px;
+  }
 }

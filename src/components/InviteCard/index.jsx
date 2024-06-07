@@ -5,7 +5,7 @@ import { Col, Row } from "antd";
 import Button from "@components/Button/index";
 import BoxBorder from "@components/BoxBorder/index";
 
-export default function BoxCard({ type, title, desc, subTitle, buttonText = 'open' }) {
+export default function InviteCard({ type, title, desc, subTitle, buttonText = 'open' }) {
   return (
     <div className="box-card">
       <BoxBorder />

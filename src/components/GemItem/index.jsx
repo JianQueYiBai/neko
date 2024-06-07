@@ -18,8 +18,8 @@ export default function GemItem({ color, title, descLeft, descRight }) {
       <div style={{marginLeft:'16px'}}>
         <div className="gem-title">{title}</div>
         <div>
-          <div className="gem-desc-left">{descLeft}</div>
-          {descRight && <div className="gem-desc-right">/{descRight}</div>}
+          <span className="gem-desc-left">{descLeft}</span>
+          {descRight && <span className="gem-desc-right">/{descRight}</span>}
         </div>
       </div>
     </Flex>

@@ -12,15 +12,42 @@
   line-height: 1;
   height: 36px;
   display: inline-flex;
-
+align-self: center;
 }
 
-.yellowBtn , .shortBtn{
+.yellowBtn.shortBtn{
     background: url("../../assets/btn-yellow-short.png") no-repeat;
     background-size: 100% 100%;
 }
-.yellowBtn , .longBtn{
+.yellowBtn.longBtn{
     background: url("../../assets/btn-yellow-long.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.orangeBtn.shortBtn{
+    background: url("../../assets/btn-orange-short.png") no-repeat;
+    background-size: 100% 100%;
+}
+.orangeBtn.longBtn{
+    background: url("../../assets/btn-orange-long.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.yellowBtn.shortBtn{
+    background: url("../../assets/btn-yellow-short.png") no-repeat;
+    background-size: 100% 100%;
+}
+.yellowBtn.longBtn{
+    background: url("../../assets/btn-yellow-long.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.blueBtn.shortBtn{
+    background: url("../../assets/btn-blue-short.png") no-repeat;
+    background-size: 100% 100%;
+}
+.blueBtn.longBtn{
+    background: url("../../assets/btn-blue-long.png") no-repeat;
     background-size: 100% 100%;
 }
 

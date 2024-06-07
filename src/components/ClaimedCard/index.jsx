@@ -9,7 +9,7 @@ import { Col, Row, Flex } from "antd";
 import { useAppStore } from "@stores/index";
 
 export default function ClaimedCard() {
-  const { device } = useAppStore();
+  const { device } = useAppStore(); 
   return (
     <div className="input-card">
       <BoxBorder />
@@ -72,8 +72,8 @@ export default function ClaimedCard() {
           </Flex>
         </Col> */}
       </Row>
-      <Row align="center" justify="space-between" style={{marginTop:'32px'}}>
-        <Col xs={24} sm={5} style={{alignSelf:'center'}}>
+      <Row align="center" justify="space-between" style={{marginTop:'24px'}}>
+        <Col xs={24} sm={5} style={{alignSelf:'center', margin:'16px 0'}}>
           <img src={icon1} width={40} alt="" />
           <img src={icon2} width={40} alt="" style={{margin:'0 16px'}}  />
           <img src={icon3} width={40} alt="" />
