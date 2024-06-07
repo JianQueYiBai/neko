@@ -4,11 +4,13 @@
   position: relative;
   height: 100%;
 }
-.card-sub-text{
-  color: #90A6AF;
- font-size: 13px;
- font-family: BIG SHOT;
- font-weight: 400;
- line-height: 20px;
- word-wrap: break-word
+.card-sub-text {
+  color: #90a6af;
+  font-size: 13px;
+  font-family: BIG SHOT;
+  font-weight: 400;
+  line-height: 20px;
+  word-wrap: break-word;
 }
+
+
