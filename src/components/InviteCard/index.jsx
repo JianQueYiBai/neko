@@ -89,32 +89,32 @@ export default function InviteCard({
             Invite 5 friends to help you get the Master‘s Box (1/5)
           </div>
         </Row>
-        <Row justify={'center'}>
-            <Col xs={3} className="friend">
+        <Row justify={'center'} gutter='8'>
+            <Col xs={4} sm={3} className="friend">
               <div className="friend-avatar text-center">
                 <img src={avatar} width="100%" alt="" />
               </div>
               <div className="friend-text">0x12...34</div>
             </Col>
-            <Col xs={3}  className="friend">
+            <Col xs={4} sm={3} className="friend">
               <div className="friend-avatar text-center">
                 +
               </div>
               <div className="friend-text2">Waiting</div>
             </Col>
-            <Col xs={3}  className="friend">
+            <Col xs={4} sm={3} className="friend">
               <div className="friend-avatar text-center">
                 +
               </div>
               <div className="friend-text2">Waiting</div>
             </Col>
-            <Col xs={3}  className="friend">
+            <Col xs={4} sm={3} className="friend">
               <div className="friend-avatar text-center">
                 +
               </div>
               <div className="friend-text2">Waiting</div>
             </Col>
-            <Col xs={3}  className="friend">
+            <Col xs={4} sm={3} className="friend">
               <div className="friend-avatar text-center">
                 +
               </div>
