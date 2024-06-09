@@ -63,3 +63,8 @@ align-self: center;
 
 .longBtn {
 }
+
+
+.disabledBtn{
+    opacity: 0.6;
+}

@@ -171,3 +171,10 @@
     margin-right: 16px;
   }
 }
+
+
+.black-bg{
+  background-color: #0E2736;
+  padding:16px 12px;
+  position: relative;
+}

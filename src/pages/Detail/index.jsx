@@ -1,6 +1,7 @@
 import "./index.css";
 import ClaimedCard from "@components/ClaimedCard/index";
 import BoxCard from "@components/BoxCard/index";
+import InviteCard from "@components/InviteCard/index";
 import Button from "@components/Button/index";
 import EmptyCard from "@components/EmptyCard/index";
 import GemItem from "@components/GemItem/index";
@@ -31,6 +32,14 @@ export default function Detail() {
         />
         My Assets
       </Flex>
+      <Row gutter={{ xs: 0, sm: 16 }}>
+        <Col xs={24} sm={12}>
+          <InviteCard />
+        </Col>
+        <Col xs={24} sm={12} >
+          <ClaimedCard />
+        </Col>
+      </Row>
       <Row gutter={{ xs: 0, sm: 16 }}>
         <Col xs={24} sm={6} className="margin-top-16">
           <BoxCard
@@ -174,158 +183,158 @@ export default function Detail() {
           </Flex>
         </Flex>
 
-          <Row gutter={16}>
-            <Col xs={12} sm={4}>
-              <Flex className="card-item" justify="center" vertical="column">
-                <img src={card1} alt="" />
-                <Button text="Staking" color="yellow" longness="short" />
-              </Flex>
-            </Col>
-            <Col xs={12} sm={4}>
-              <Flex className="card-item" justify="center" vertical="column">
-                <img src={card2} alt="" />
-                <Button text="Staking" color="yellow" longness="short" />
-              </Flex>
-            </Col>
-            <Col xs={12} sm={4}>
-              <Flex className="card-item" justify="center" vertical="column">
-                <img src={card3} alt="" />
-                <Button text="LV UP" color="orange" longness="short" />
-              </Flex>
-            </Col>
-            <Col xs={12} sm={4}>
-              <Flex className="card-item" justify="center" vertical="column">
-                <img src={card4} alt="" />
-                <Button text="Staking" color="yellow" longness="short" />
-              </Flex>
-            </Col>
-            <Col xs={12} sm={4}>
-              <Flex className="card-item" justify="center" vertical="column">
-                <img src={card5} alt="" />
-                <Button text="UNSTAKE" color="blue" longness="short" />
-              </Flex>
-            </Col>
-            <Col xs={12} sm={4}>
-              <Flex className="card-item" justify="center" vertical="column">
-                <img src={card1} alt="" />
-                <Button text="Staking" color="yellow" longness="short" />
-              </Flex>
-            </Col>
-            <Col xs={12} sm={4}>
-              <Flex className="card-item" justify="center" vertical="column">
-                <img src={card2} alt="" />
-                <Button text="Staking" color="yellow" longness="short" />
-              </Flex>
-            </Col>
-            <Col xs={12} sm={4}>
-              <Flex className="card-item" justify="center" vertical="column">
-                <img src={card3} alt="" />
-                <Button text="LV UP" color="orange" longness="short" />
-              </Flex>
-            </Col>
-            <Col xs={12} sm={4}>
-              <Flex className="card-item" justify="center" vertical="column">
-                <img src={card4} alt="" />
-                <Button text="Staking" color="yellow" longness="short" />
-              </Flex>
-            </Col>
-            <Col xs={12} sm={4}>
-              <Flex className="card-item" justify="center" vertical="column">
-                <img src={card5} alt="" />
-                <Button text="UNSTAKE" color="blue" longness="short" />
-              </Flex>
-            </Col>
-            <Col xs={12} sm={4}>
-              <Flex className="card-item" justify="center" vertical="column">
-                <img src={card1} alt="" />
-                <Button text="Staking" color="yellow" longness="short" />
-              </Flex>
-            </Col>
-            <Col xs={12} sm={4}>
-              <Flex className="card-item" justify="center" vertical="column">
-                <img src={card2} alt="" />
-                <Button text="Staking" color="yellow" longness="short" />
-              </Flex>
-            </Col>
-            <Col xs={12} sm={4}>
-              <Flex className="card-item" justify="center" vertical="column">
-                <img src={card3} alt="" />
-                <Button text="LV UP" color="orange" longness="short" />
-              </Flex>
-            </Col>
-            <Col xs={12} sm={4}>
-              <Flex className="card-item" justify="center" vertical="column">
-                <img src={card4} alt="" />
-                <Button text="Staking" color="yellow" longness="short" />
-              </Flex>
-            </Col>
-            <Col xs={12} sm={4}>
-              <Flex className="card-item" justify="center" vertical="column">
-                <img src={card5} alt="" />
-                <Button text="UNSTAKE" color="blue" longness="short" />
-              </Flex>
-            </Col>
-            <Col xs={12} sm={4}>
-              <Flex className="card-item" justify="center" vertical="column">
-                <img src={card1} alt="" />
-                <Button text="Staking" color="yellow" longness="short" />
-              </Flex>
-            </Col>
-            <Col xs={12} sm={4}>
-              <Flex className="card-item" justify="center" vertical="column">
-                <img src={card2} alt="" />
-                <Button text="Staking" color="yellow" longness="short" />
-              </Flex>
-            </Col>
-            <Col xs={12} sm={4}>
-              <Flex className="card-item" justify="center" vertical="column">
-                <img src={card3} alt="" />
-                <Button text="LV UP" color="orange" longness="short" />
-              </Flex>
-            </Col>
-            <Col xs={12} sm={4}>
-              <Flex className="card-item" justify="center" vertical="column">
-                <img src={card4} alt="" />
-                <Button text="Staking" color="yellow" longness="short" />
-              </Flex>
-            </Col>
-            <Col xs={12} sm={4}>
-              <Flex className="card-item" justify="center" vertical="column">
-                <img src={card5} alt="" />
-                <Button text="UNSTAKE" color="blue" longness="short" />
-              </Flex>
-            </Col>
-            <Col xs={12} sm={4}>
-              <Flex className="card-item" justify="center" vertical="column">
-                <img src={card1} alt="" />
-                <Button text="Staking" color="yellow" longness="short" />
-              </Flex>
-            </Col>
-            <Col xs={12} sm={4}>
-              <Flex className="card-item" justify="center" vertical="column">
-                <img src={card2} alt="" />
-                <Button text="Staking" color="yellow" longness="short" />
-              </Flex>
-            </Col>
-            <Col xs={12} sm={4}>
-              <Flex className="card-item" justify="center" vertical="column">
-                <img src={card3} alt="" />
-                <Button text="LV UP" color="orange" longness="short" />
-              </Flex>
-            </Col>
-            <Col xs={12} sm={4}>
-              <Flex className="card-item" justify="center" vertical="column">
-                <img src={card4} alt="" />
-                <Button text="Staking" color="yellow" longness="short" />
-              </Flex>
-            </Col>
-            <Col xs={12} sm={4}>
-              <Flex className="card-item" justify="center" vertical="column">
-                <img src={card5} alt="" />
-                <Button text="UNSTAKE" color="blue" longness="short" />
-              </Flex>
-            </Col>
-          </Row>
+        <Row gutter={16}>
+          <Col xs={12} sm={4}>
+            <Flex className="card-item" justify="center" vertical="column">
+              <img src={card1} alt="" />
+              <Button text="Staking" color="yellow" longness="short" />
+            </Flex>
+          </Col>
+          <Col xs={12} sm={4}>
+            <Flex className="card-item" justify="center" vertical="column">
+              <img src={card2} alt="" />
+              <Button text="Staking" color="yellow" longness="short" />
+            </Flex>
+          </Col>
+          <Col xs={12} sm={4}>
+            <Flex className="card-item" justify="center" vertical="column">
+              <img src={card3} alt="" />
+              <Button text="LV UP" color="orange" longness="short" />
+            </Flex>
+          </Col>
+          <Col xs={12} sm={4}>
+            <Flex className="card-item" justify="center" vertical="column">
+              <img src={card4} alt="" />
+              <Button text="Staking" color="yellow" longness="short" />
+            </Flex>
+          </Col>
+          <Col xs={12} sm={4}>
+            <Flex className="card-item" justify="center" vertical="column">
+              <img src={card5} alt="" />
+              <Button text="UNSTAKE" color="blue" longness="short" />
+            </Flex>
+          </Col>
+          <Col xs={12} sm={4}>
+            <Flex className="card-item" justify="center" vertical="column">
+              <img src={card1} alt="" />
+              <Button text="Staking" color="yellow" longness="short" />
+            </Flex>
+          </Col>
+          <Col xs={12} sm={4}>
+            <Flex className="card-item" justify="center" vertical="column">
+              <img src={card2} alt="" />
+              <Button text="Staking" color="yellow" longness="short" />
+            </Flex>
+          </Col>
+          <Col xs={12} sm={4}>
+            <Flex className="card-item" justify="center" vertical="column">
+              <img src={card3} alt="" />
+              <Button text="LV UP" color="orange" longness="short" />
+            </Flex>
+          </Col>
+          <Col xs={12} sm={4}>
+            <Flex className="card-item" justify="center" vertical="column">
+              <img src={card4} alt="" />
+              <Button text="Staking" color="yellow" longness="short" />
+            </Flex>
+          </Col>
+          <Col xs={12} sm={4}>
+            <Flex className="card-item" justify="center" vertical="column">
+              <img src={card5} alt="" />
+              <Button text="UNSTAKE" color="blue" longness="short" />
+            </Flex>
+          </Col>
+          <Col xs={12} sm={4}>
+            <Flex className="card-item" justify="center" vertical="column">
+              <img src={card1} alt="" />
+              <Button text="Staking" color="yellow" longness="short" />
+            </Flex>
+          </Col>
+          <Col xs={12} sm={4}>
+            <Flex className="card-item" justify="center" vertical="column">
+              <img src={card2} alt="" />
+              <Button text="Staking" color="yellow" longness="short" />
+            </Flex>
+          </Col>
+          <Col xs={12} sm={4}>
+            <Flex className="card-item" justify="center" vertical="column">
+              <img src={card3} alt="" />
+              <Button text="LV UP" color="orange" longness="short" />
+            </Flex>
+          </Col>
+          <Col xs={12} sm={4}>
+            <Flex className="card-item" justify="center" vertical="column">
+              <img src={card4} alt="" />
+              <Button text="Staking" color="yellow" longness="short" />
+            </Flex>
+          </Col>
+          <Col xs={12} sm={4}>
+            <Flex className="card-item" justify="center" vertical="column">
+              <img src={card5} alt="" />
+              <Button text="UNSTAKE" color="blue" longness="short" />
+            </Flex>
+          </Col>
+          <Col xs={12} sm={4}>
+            <Flex className="card-item" justify="center" vertical="column">
+              <img src={card1} alt="" />
+              <Button text="Staking" color="yellow" longness="short" />
+            </Flex>
+          </Col>
+          <Col xs={12} sm={4}>
+            <Flex className="card-item" justify="center" vertical="column">
+              <img src={card2} alt="" />
+              <Button text="Staking" color="yellow" longness="short" />
+            </Flex>
+          </Col>
+          <Col xs={12} sm={4}>
+            <Flex className="card-item" justify="center" vertical="column">
+              <img src={card3} alt="" />
+              <Button text="LV UP" color="orange" longness="short" />
+            </Flex>
+          </Col>
+          <Col xs={12} sm={4}>
+            <Flex className="card-item" justify="center" vertical="column">
+              <img src={card4} alt="" />
+              <Button text="Staking" color="yellow" longness="short" />
+            </Flex>
+          </Col>
+          <Col xs={12} sm={4}>
+            <Flex className="card-item" justify="center" vertical="column">
+              <img src={card5} alt="" />
+              <Button text="UNSTAKE" color="blue" longness="short" />
+            </Flex>
+          </Col>
+          <Col xs={12} sm={4}>
+            <Flex className="card-item" justify="center" vertical="column">
+              <img src={card1} alt="" />
+              <Button text="Staking" color="yellow" longness="short" />
+            </Flex>
+          </Col>
+          <Col xs={12} sm={4}>
+            <Flex className="card-item" justify="center" vertical="column">
+              <img src={card2} alt="" />
+              <Button text="Staking" color="yellow" longness="short" />
+            </Flex>
+          </Col>
+          <Col xs={12} sm={4}>
+            <Flex className="card-item" justify="center" vertical="column">
+              <img src={card3} alt="" />
+              <Button text="LV UP" color="orange" longness="short" />
+            </Flex>
+          </Col>
+          <Col xs={12} sm={4}>
+            <Flex className="card-item" justify="center" vertical="column">
+              <img src={card4} alt="" />
+              <Button text="Staking" color="yellow" longness="short" />
+            </Flex>
+          </Col>
+          <Col xs={12} sm={4}>
+            <Flex className="card-item" justify="center" vertical="column">
+              <img src={card5} alt="" />
+              <Button text="UNSTAKE" color="blue" longness="short" />
+            </Flex>
+          </Col>
+        </Row>
       </div>
     </div>
   );
