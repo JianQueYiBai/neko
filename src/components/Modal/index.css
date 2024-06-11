@@ -44,17 +44,77 @@
 }
 
 .modal-text2 {
-    color: #01DCE4;
-     font-size: 14px;
+  color: #01dce4;
+  font-size: 14px;
+  font-family: BIG SHOT;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.modal-text3 {
+  color: #f5f5f5;
+  font-size: 14px;
+  font-family: BIG SHOT;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.modal-text4 {
+    color: #FBA323;
+     font-size: 16px;
      font-family: BIG SHOT;
      font-weight: 400;
+     letter-spacing: 0.10px;
      word-wrap: break-word;
   }
 
-  .modal-text3 {
-    color: #F5F5F5;
+
+  .modal-text5 {
+    color: #01DCE4;
+     font-size: 12px;
+     font-family: BIG SHOT;
+     font-weight: 400;
+     letter-spacing: 0.10px;
+     word-wrap: break-word;
+  }
+
+  .modal-text6 {
+    color: #fff;
+     font-size: 12px;
+     font-family: BIG SHOT;
+     font-weight: 400;
+     letter-spacing: 0.10px;
+     word-wrap: break-word;
+
+     width: 50px;
+     text-align: right;
+  }
+
+  .modal-text7 {
+    color: #FBA323;
+     font-size: 12px;
+     font-family: BIG SHOT;
+     font-weight: 400;
+     letter-spacing: 0.10px;
+     word-wrap: break-word;
+     width: 50px;
+     text-align: left;
+  }
+
+  .modal-text8 {
+    color: #fff;
+     font-size: 12px;
+     font-family: BIG SHOT;
+     font-weight: 400;
+     letter-spacing: 0.10px;
+     word-wrap: break-word;
+  }
+
+  .modal-text9 {
+    color: #90A6AF;
      font-size: 14px;
      font-family: BIG SHOT;
      font-weight: 400;
+     letter-spacing: 0.10px;
      word-wrap: break-word;
   }

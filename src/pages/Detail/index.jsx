@@ -17,6 +17,13 @@ import card2 from "@assets/card2.png";
 import card3 from "@assets/card3.png";
 import card4 from "@assets/card4.png";
 import card5 from "@assets/card5.png";
+import m1 from "@assets/modal-icon1.png";
+import m2 from "@assets/modal-icon2.png";
+import m3 from "@assets/modal-icon3.png";
+import m4 from "@assets/modal-icon4.png";
+import m5 from "@assets/modal-icon5.png";
+import purple from "@assets/purple.png";
+import blue from "@assets/blue.png";
 
 import arrowLeft from "@assets/arrow-left.png";
 import { useAppStore } from "@stores/index";
@@ -357,58 +364,247 @@ export default function Detail() {
               <img src={card3} width={192} alt="" />
             </div>
           </div>
-          <Button text="GO CHECK" color="yellow" longness="short" />
+          <Button
+            text="GO CHECK"
+            color="yellow"
+            longness="short"
+            style={{ marginTop: "48px" }}
+          />
         </Flex>
       </NekoModal>
 
       <NekoModal
         title="Details"
-        isModalOpen={isModalOpen}
+        // isModalOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
       >
         <Flex justify="center" vertical="column">
-          <Flex>
-            <div className="modal-card">
+          <Row>
+            <Col xs={24} sm={12} className="modal-card">
               <div className="modal-card-inner">
                 <CardCorner />
                 <img src={card3} width={192} alt="" />
               </div>
-            </div>
-            <div style={{ flex: 1, padding: '15px 15px 21px '}} >
-
-            
-            <Flex
-              className="modal-detail"
-              vertical="column"
+            </Col>
+            <Col
+              xs={24}
+              sm={12}
+              style={{
+                flex: 1,
+                padding: "15px 15px 21px ",
+                marginLeft: "32px",
+              }}
             >
-              <div className="modal-text1 margin-top-16">#9871</div>
-              <Flex justify="space-between" className="margin-bottom-16">
-                <div className="modal-text2">Earning</div>
-                <div className="modal-text3">/</div>
+              <Flex className="modal-detail" vertical="column">
+                <div className="modal-text1 margin-top-16">#9871</div>
+                <Flex justify="space-between" className="margin-bottom-16">
+                  <div className="modal-text2">Earning</div>
+                  <div className="modal-text3">/</div>
+                </Flex>
+                <Flex justify="space-between" className="margin-bottom-16">
+                  <div className="modal-text2">Claimed</div>
+                  <div className="modal-text3">/</div>
+                </Flex>
+                <Flex justify="space-between" className="margin-bottom-16">
+                  <div className="modal-text2">APR</div>
+                  <div className="modal-text3">/</div>
+                </Flex>
+                <Flex justify="space-between" className="margin-bottom-16">
+                  <div className="modal-text2">Status</div>
+                  <div className="modal-text3">Available</div>
+                </Flex>
+                <Flex justify="space-between" className="margin-bottom-16">
+                  <div className="modal-text2">LV</div>
+                  <div className="modal-text3">1</div>
+                </Flex>
               </Flex>
-              <Flex justify="space-between" className="margin-bottom-16">
-                <div className="modal-text2">Claimed</div>
-                <div className="modal-text3">/</div>
-              </Flex>
-              <Flex justify="space-between" className="margin-bottom-16">
-                <div className="modal-text2">APR</div>
-                <div className="modal-text3">/</div>
-              </Flex>
-              <Flex justify="space-between" className="margin-bottom-16">
-                <div className="modal-text2">Status</div>
-                <div className="modal-text3">Available</div>
-              </Flex>
-              <Flex justify="space-between" className="margin-bottom-16">
-                <div className="modal-text2">LV</div>
-                <div className="modal-text3">1</div>
-              </Flex>
-            </Flex>
+            </Col>
+          </Row>
 
-            </div>
-          </Flex>
-          
+          <Button
+            text="Staking"
+            color="yellow"
+            longness="short"
+            style={{ marginTop: "48px" }}
+          />
+        </Flex>
+      </NekoModal>
 
-          <Button text="Staking" color="yellow" longness="short" />
+      <NekoModal
+        title="Details - LV UP"
+        isModalOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+      >
+        <Flex justify="center" vertical="column">
+          <Row>
+            <Col xs={24} sm={12} className="modal-card">
+              <div className="modal-card-inner">
+                <CardCorner />
+                <img src={card3} width={192} alt="" />
+              </div>
+            </Col>
+            <Col
+              xs={24}
+              sm={12}
+              style={{
+                flex: 1,
+                padding: "15px 15px 21px ",
+                marginLeft: "32px",
+              }}
+            >
+              <Flex className="modal-detail" vertical="column">
+                <div className="modal-text1 margin-top-16">#9871</div>
+                <Flex justify="space-between" className="margin-bottom-16">
+                  <div className="modal-text2">Earning</div>
+                  <div className="modal-text3">/</div>
+                </Flex>
+                <Flex justify="space-between" className="margin-bottom-16">
+                  <div className="modal-text2">Claimed</div>
+                  <div className="modal-text3">/</div>
+                </Flex>
+                <Flex justify="space-between" className="margin-bottom-16">
+                  <div className="modal-text2">APR</div>
+                  <div className="modal-text3">/</div>
+                </Flex>
+                <Flex justify="space-between" className="margin-bottom-16">
+                  <div className="modal-text2">Status</div>
+                  <div className="modal-text3">Available</div>
+                </Flex>
+                <Flex justify="space-between" className="margin-bottom-16">
+                  <div className="modal-text2">LV</div>
+                  <div className="modal-text3">1</div>
+                </Flex>
+              </Flex>
+            </Col>
+          </Row>
+          <Row justify="center">
+            <Col xs={24} sm={18}>
+              <Flex justify="center">
+                <div className="modal-text1">LV 7 →</div>
+                <div className="modal-text4">&nbsp;LV 8</div>
+              </Flex>
+              <Flex justify="space-between">
+                <Flex align="center" className="modal-text5">
+                  {" "}
+                  <img
+                    src={m1}
+                    width={14}
+                    alt=""
+                    style={{ marginRight: "10px" }}
+                  />
+                  SPI
+                </Flex>
+                <Flex>
+                  <div className="modal-text6">12</div>
+                  <div className="modal-text8">&nbsp;{">"}&nbsp;</div>
+                  <div className="modal-text7">14</div>
+                </Flex>
+              </Flex>
+              <Flex justify="space-between">
+                <Flex align="center" className="modal-text5">
+                  {" "}
+                  <img
+                    src={m2}
+                    width={14}
+                    alt=""
+                    style={{ marginRight: "10px" }}
+                  />
+                  STK
+                </Flex>
+                <Flex>
+                  <div className="modal-text6">1764</div>
+                  <div className="modal-text8">&nbsp;{">"}&nbsp;</div>
+                  <div className="modal-text7">1764</div>
+                </Flex>
+              </Flex>
+              <Flex justify="space-between">
+                <Flex align="center" className="modal-text5">
+                  {" "}
+                  <img
+                    src={m3}
+                    width={14}
+                    alt=""
+                    style={{ marginRight: "10px" }}
+                  />
+                  DEF
+                </Flex>
+                <Flex>
+                  <div className="modal-text6">12</div>
+                  <div className="modal-text8">&nbsp;{">"}&nbsp;</div>
+                  <div className="modal-text7">14</div>
+                </Flex>
+              </Flex>
+              <Flex justify="space-between">
+                <Flex align="center" className="modal-text5">
+                  {" "}
+                  <img
+                    src={m4}
+                    width={14}
+                    alt=""
+                    style={{ marginRight: "10px" }}
+                  />
+                  SPD
+                </Flex>
+                <Flex>
+                  <div className="modal-text6">365</div>
+                  <div className="modal-text8">&nbsp;{">"}&nbsp;</div>
+                  <div className="modal-text7">400</div>
+                </Flex>
+              </Flex>
+              <Flex justify="space-between">
+                <Flex align="center" className="modal-text5">
+                  {" "}
+                  <img
+                    src={m5}
+                    width={14}
+                    alt=""
+                    style={{ marginRight: "10px" }}
+                  />
+                  MANA
+                </Flex>
+                <Flex>
+                  <div className="modal-text6">4680</div>
+                  <div className="modal-text8">&nbsp;{">"}&nbsp;</div>
+                  <div className="modal-text7">4690</div>
+                </Flex>
+              </Flex>
+              <Flex
+                className="black-bg2"
+                justify="space-between"
+                align="center"
+                style={{marginTop:'16px'}}
+              >
+                <Flex align="center">
+                  <img src={purple} width={24} style={{marginRight:'10px'}} alt="" />
+                  <div className="modal-text3">Prism</div>
+                </Flex>
+                <Flex>
+                  <div className="modal-text3">342</div>
+                  <div className="modal-text9">/9</div>
+                </Flex>
+              </Flex>
+              <Flex
+                className="black-bg3"
+                justify="space-between"
+                align="center"
+              >
+                <Flex align="center">
+                  <img src={blue} width={24} style={{marginRight:'10px'}} alt="" />
+                  <div className="modal-text3">Neko</div>
+                </Flex>
+                <Flex>
+                  <div className="modal-text3">546436</div>
+                  <div className="modal-text9">/50000</div>
+                </Flex>
+              </Flex>
+            </Col>
+          </Row>
+          <Button
+            text="LV UP"
+            color="orange"
+            longness="short"
+            style={{ marginTop: "48px" }}
+          />
         </Flex>
       </NekoModal>
     </div>

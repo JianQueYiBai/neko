@@ -182,4 +182,18 @@
   position: relative;
 }
 
+.black-bg2{
+  background-color: #0E2736;
+  padding:4px 8px;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.black-bg3{
+  background-color: #0E2736;
+  padding:8px 8px;
+  position: relative;
+  margin-bottom: 8px;
+}
+
 
