@@ -7,6 +7,9 @@ import EmptyCard from "@components/EmptyCard/index";
 import GemItem from "@components/GemItem/index";
 import BoxBorder from "@components/BoxBorder/index";
 import RadioButton from "@components/RadioButton/index";
+import NekoModal from "@components/Modal/index";
+import CardCorner from "@components/CardCorner/index";
+
 import exclamation from "@assets/exclamation.png";
 import copy from "@assets/copy.png";
 import card1 from "@assets/card1.png";
@@ -14,13 +17,17 @@ import card2 from "@assets/card2.png";
 import card3 from "@assets/card3.png";
 import card4 from "@assets/card4.png";
 import card5 from "@assets/card5.png";
+
 import arrowLeft from "@assets/arrow-left.png";
 import { useAppStore } from "@stores/index";
+import { useState } from "react";
 
 import { Col, Row, Flex } from "antd";
 
 export default function Detail() {
   const isMobile = useAppStore().device === "mobile";
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <div className="detail padding-top-80 padding-bottom-80">
       <Flex className="back-btn" align="center">
@@ -36,13 +43,14 @@ export default function Detail() {
         <Col xs={24} sm={12}>
           <InviteCard />
         </Col>
-        <Col xs={24} sm={12} >
+        <Col xs={24} sm={12}>
           <ClaimedCard />
         </Col>
       </Row>
       <Row gutter={{ xs: 0, sm: 16 }}>
         <Col xs={24} sm={6} className="margin-top-16">
           <BoxCard
+            onButtonClick={() => setIsModalOpen(true)}
             title="Adept’s Chest"
             buttonText="Open"
             desc="Stake at least one Level 13 Neko NFT to obtain an Adept's Chest."
@@ -336,6 +344,73 @@ export default function Detail() {
           </Col>
         </Row>
       </div>
+
+      <NekoModal
+        title="Starter Pack"
+        // isModalOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+      >
+        <Flex justify="center" vertical="column">
+          <div className="modal-card">
+            <div className="modal-card-inner">
+              <CardCorner />
+              <img src={card3} width={192} alt="" />
+            </div>
+          </div>
+          <Button text="GO CHECK" color="yellow" longness="short" />
+        </Flex>
+      </NekoModal>
+
+      <NekoModal
+        title="Details"
+        isModalOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+      >
+        <Flex justify="center" vertical="column">
+          <Flex>
+            <div className="modal-card">
+              <div className="modal-card-inner">
+                <CardCorner />
+                <img src={card3} width={192} alt="" />
+              </div>
+            </div>
+            <div style={{ flex: 1, padding: '15px 15px 21px '}} >
+
+            
+            <Flex
+              className="modal-detail"
+              vertical="column"
+            >
+              <div className="modal-text1 margin-top-16">#9871</div>
+              <Flex justify="space-between" className="margin-bottom-16">
+                <div className="modal-text2">Earning</div>
+                <div className="modal-text3">/</div>
+              </Flex>
+              <Flex justify="space-between" className="margin-bottom-16">
+                <div className="modal-text2">Claimed</div>
+                <div className="modal-text3">/</div>
+              </Flex>
+              <Flex justify="space-between" className="margin-bottom-16">
+                <div className="modal-text2">APR</div>
+                <div className="modal-text3">/</div>
+              </Flex>
+              <Flex justify="space-between" className="margin-bottom-16">
+                <div className="modal-text2">Status</div>
+                <div className="modal-text3">Available</div>
+              </Flex>
+              <Flex justify="space-between" className="margin-bottom-16">
+                <div className="modal-text2">LV</div>
+                <div className="modal-text3">1</div>
+              </Flex>
+            </Flex>
+
+            </div>
+          </Flex>
+          
+
+          <Button text="Staking" color="yellow" longness="short" />
+        </Flex>
+      </NekoModal>
     </div>
   );
 }

@@ -17,6 +17,8 @@ export default function InviteCard({
   buttonText = "open",
 }) {
   const isMobile = useAppStore().device === "mobile";
+
+
   return (
     <div className="invite-card">
       <BoxBorder />
@@ -121,6 +123,7 @@ export default function InviteCard({
               <div className="friend-text2">Waiting</div>
             </Col>
         </Row>
+
     </div>
   );
 }
