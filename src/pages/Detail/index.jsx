@@ -24,6 +24,11 @@ import m4 from "@assets/modal-icon4.png";
 import m5 from "@assets/modal-icon5.png";
 import purple from "@assets/purple.png";
 import blue from "@assets/blue.png";
+import adept1 from "@assets/adept1.png";
+import adept2 from "@assets/adept2.png";
+import adept3 from "@assets/adept3.png";
+
+
 
 import arrowLeft from "@assets/arrow-left.png";
 import { useAppStore } from "@stores/index";
@@ -432,7 +437,7 @@ export default function Detail() {
 
       <NekoModal
         title="Details - LV UP"
-        isModalOpen={isModalOpen}
+        // isModalOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
       >
         <Flex justify="center" vertical="column">
@@ -606,6 +611,89 @@ export default function Detail() {
             style={{ marginTop: "48px" }}
           />
         </Flex>
+      </NekoModal>
+
+
+      <NekoModal
+        title=""
+        // isModalOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+      >
+        <div className="modal-title text-center margin-bottom-16">
+          Open Adept's Chest
+        </div>
+        <Row justify="center" gutter={16}>
+          <Col>
+          <div className="adept-bg">
+            
+              <img src={adept1} width={80} alt="" />
+              <div className="modal-text1">Prism</div>
+              <div className="modal-text10">x25</div>
+
+          </div>
+          </Col>
+
+          <Col>
+          <div className="adept-bg">
+            
+              <img src={adept2} width={80} alt="" />
+              <div className="modal-text1">Neko</div>
+              <div className="modal-text10">4500</div>
+
+          </div>
+          </Col>
+          
+
+        </Row>
+        <Flex justify="center">
+        <Button
+            text="Get"
+            color="yellow"
+            longness="short"
+            style={{ marginTop: "48px" }}
+          />
+        </Flex>
+
+      </NekoModal>
+
+      <NekoModal
+        title=""
+        isModalOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+      >
+        <div className="modal-title text-center margin-bottom-16">
+         Choose Wallet
+        </div>
+        <Flex
+                className="black-bg3"
+                justify="center"
+                align="center"
+              >
+                <div className="modal-text1 text-center">Metamask</div>
+                
+                </Flex>
+                <Flex
+                className="black-bg3"
+                justify="center"
+                align="center"
+              >
+                <div className="modal-text1 text-center">OKX</div>
+                
+                </Flex>
+                <input
+                    className="input-card-input"
+                    placeholder="Enter Amount"
+                    type="text"
+                  />
+        <Flex justify="center">
+        <Button
+            text="Connect"
+            color="yellow"
+            longness="long"
+            style={{ marginTop: "48px" }}
+          />
+        </Flex>
+
       </NekoModal>
     </div>
   );
