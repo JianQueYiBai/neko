@@ -77,13 +77,14 @@ export default function PCHeader() {
         !homePage && (
           <>
             <div>
-              <img src={t1} width={24} alt="" />
-              <img style={{ margin: "0 40px" }} src={t2} width={24} alt="" />
+              <img src={t1} width={24} alt="" onClick={()=>navigate("/assets")} />
+              <img style={{ margin: "0 40px" }} src={t2} width={24} alt="" onClick={()=>navigate("/detail")}  />
               <img
                 style={{ margin: "0 40px 0 0" }}
                 src={t3}
                 width={24}
                 alt=""
+                onClick={()=>navigate("/detail2")}
               />
               <img src={t4} width={24} alt="" />
             </div>
