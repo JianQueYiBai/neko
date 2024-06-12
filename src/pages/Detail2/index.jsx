@@ -668,7 +668,7 @@ export default function Detail() {
         <div className="modal-title text-center margin-bottom-16">
           Choose Wallet
         </div>
-        <Flex className="black-bg3" justify="center" align="center">
+        <Flex className="black-bg5" justify="center" align="center">
           <div className="modal-text1 text-center">Metamask</div>
         </Flex>
         <Flex className="black-bg4" justify="center" align="center">
