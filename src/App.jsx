@@ -8,9 +8,9 @@ function App() {
 
   useEffect(() => {
     function resized (value) {    
-      console.log('value: ', window.clientWidth);
+      console.log('value: ', document.body.clientWidth);
       toggleDevice()
-      // window.removeEventListener('resize', resized); // <---- added
+      window.removeEventListener('resize', resized); // <---- added
     }
     window.addEventListener('resize', resized)
   
