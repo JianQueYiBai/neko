@@ -60,17 +60,29 @@ export default function Detail() {
         />
         My Assets
       </Flex>
-      <Row gutter={{ xs: 0, sm: 16 }}>
+
+      <Row gutter={{ md: 0, lg: 16 }}>
+        <Col xs={24}  sm={24}  lg={12} className="margin-top-16">
+          <InviteCard />
+        </Col>
+        <Col xs={24}  sm={24}  lg={12} className="margin-top-16">
+          <ClaimedCard type="short" />
+        </Col>
+      </Row>
+
+
+      {/* <Row gutter={{ xs: 0, sm: 16 }}>
         <Col xs={24} sm={12}>
           <InviteCard />
         </Col>
         <Col xs={24} sm={12}>
           <ClaimedCard type="short" />
         </Col>
-      </Row>
+      </Row> */}
 
-      <Row gutter={{ xs: 0, sm: 16 }}>
-        <Col xs={24} sm={6} className="margin-top-16">
+
+      <Row gutter={{ md: 0, lg: 16 }}>
+        <Col xs={24}  sm={24}  lg={6} className="margin-top-16">
           <BoxCard
             type="gem"
             title="58694 NKO"
@@ -78,10 +90,10 @@ export default function Detail() {
             buttonText="Claim"
           />
         </Col>
-        <Col xs={24} sm={9} className="margin-top-16">
+        <Col xs={24}  sm={24}  lg={9} className="margin-top-16">
           <EmptyCard>
             <Row>
-              <Col xs={24}>
+              <Col xs={24}  sm={24} >
                 <Flex justify="space-between">
                   <div>
                     <Flex align="center" className="card-little-title">
@@ -97,12 +109,12 @@ export default function Detail() {
                   <div className="card-little-title">0%</div>
                 </Flex>
               </Col>
-              <Col xs={24} style={{ marginTop: "8px" }}>
+              <Col xs={24}  sm={24}  style={{ marginTop: "8px" }}>
                 <div className="grey-text-little">Global mana bonus</div>
               </Col>
             </Row>
             <Row style={{ flex: 1 }}>
-              <Col xs={12} style={{ marginTop: "24px" }}>
+              <Col xs={12}  sm={12}  style={{ marginTop: "24px" }}>
                 <GemItem
                   color="purple"
                   title="Prism"
@@ -110,7 +122,7 @@ export default function Detail() {
                   descRight="9"
                 />
               </Col>
-              <Col xs={12} style={{ marginTop: "24px" }}>
+              <Col xs={12}  sm={12}  style={{ marginTop: "24px" }}>
                 <GemItem
                   color="blue"
                   title="Neko"
@@ -119,7 +131,7 @@ export default function Detail() {
                 />
               </Col>
               <Col
-                xs={24}
+                xs={24}  sm={24} 
                 className="text-center"
                 style={{ alignSelf: "flex-end", marginTop: "24px" }}
               >
@@ -128,14 +140,14 @@ export default function Detail() {
             </Row>
           </EmptyCard>
         </Col>
-        <Col xs={24} sm={9} className="margin-top-16">
+        <Col xs={24}  sm={24}  lg={9} className="margin-top-16">
           <EmptyCard>
             <Row>
-              <Col xs={24}>
+              <Col xs={24}  sm={24} >
                 <div className="card-little-title">Referral Rewards (0)</div>
               </Col>
 
-              <Col xs={24} style={{ margin: "8px 0 18px" }}>
+              <Col xs={24}  sm={24}  style={{ margin: "8px 0 18px" }}>
                 <Flex align="center" className="blue-text">
                   neko-89765432q
                   <img
@@ -161,7 +173,7 @@ export default function Detail() {
             </Flex>
             <Row style={{ flex: 1 }}>
               <Col
-                xs={24}
+                xs={24}  sm={24} 
                 className="text-center"
                 style={{ alignSelf: "flex-end", marginTop: "24px" }}
               >
@@ -206,151 +218,151 @@ export default function Detail() {
         </Flex>
 
         <Row gutter={16}>
-          <Col xs={12} sm={4}>
+          <Col xs={12}  sm={12}  lg={4}>
             <Flex className="card-item" justify="center" vertical="column">
               <img src={card1} alt="" />
               <Button onButtonClick={() => setIsModalOpen1(true)} text="Staking" color="yellow" longness="short" />
             </Flex>
           </Col>
-          <Col xs={12} sm={4}>
+          <Col xs={12}  sm={12}  lg={4}>
             <Flex className="card-item" justify="center" vertical="column">
               <img src={card2} alt="" />
               <Button onButtonClick={() => setIsModalOpen2(true)} text="Staking" color="yellow" longness="short" />
             </Flex>
           </Col>
-          <Col xs={12} sm={4}>
+          <Col xs={12}  sm={12}  lg={4}>
             <Flex className="card-item" justify="center" vertical="column">
               <img src={card3} alt="" />
               <Button onButtonClick={() => setIsModalOpen3(true)} text="LV UP" color="orange" longness="short" />
             </Flex>
           </Col>
-          <Col xs={12} sm={4}>
+          <Col xs={12}  sm={12}  lg={4}>
             <Flex className="card-item" justify="center" vertical="column">
               <img src={card4} alt="" />
               <Button onButtonClick={() => setIsModalOpen4(true)} text="Staking" color="yellow" longness="short" />
             </Flex>
           </Col>
-          <Col xs={12} sm={4}>
+          <Col xs={12}  sm={12}  lg={4}>
             <Flex className="card-item" justify="center" vertical="column">
               <img src={card5} alt="" />
               <Button onButtonClick={() => setIsModalOpen5(true)} text="UNSTAKE" color="blue" longness="short" />
             </Flex>
           </Col>
-          <Col xs={12} sm={4}>
+          <Col xs={12}  sm={12}  lg={4}>
             <Flex className="card-item" justify="center" vertical="column">
               <img src={card1} alt="" />
               <Button text="Staking" color="yellow" longness="short" />
             </Flex>
           </Col>
-          <Col xs={12} sm={4}>
+          <Col xs={12}  sm={12}  lg={4}>
             <Flex className="card-item" justify="center" vertical="column">
               <img src={card2} alt="" />
               <Button text="Staking" color="yellow" longness="short" />
             </Flex>
           </Col>
-          <Col xs={12} sm={4}>
+          <Col xs={12}  sm={12}  lg={4}>
             <Flex className="card-item" justify="center" vertical="column">
               <img src={card3} alt="" />
               <Button text="LV UP" color="orange" longness="short" />
             </Flex>
           </Col>
-          <Col xs={12} sm={4}>
+          <Col xs={12}  sm={12}  lg={4}>
             <Flex className="card-item" justify="center" vertical="column">
               <img src={card4} alt="" />
               <Button text="Staking" color="yellow" longness="short" />
             </Flex>
           </Col>
-          <Col xs={12} sm={4}>
+          <Col xs={12}  sm={12}  lg={4}>
             <Flex className="card-item" justify="center" vertical="column">
               <img src={card5} alt="" />
               <Button text="UNSTAKE" color="blue" longness="short" />
             </Flex>
           </Col>
-          <Col xs={12} sm={4}>
+          <Col xs={12}  sm={12}  lg={4}>
             <Flex className="card-item" justify="center" vertical="column">
               <img src={card1} alt="" />
               <Button text="Staking" color="yellow" longness="short" />
             </Flex>
           </Col>
-          <Col xs={12} sm={4}>
+          <Col xs={12}  sm={12}  lg={4}>
             <Flex className="card-item" justify="center" vertical="column">
               <img src={card2} alt="" />
               <Button text="Staking" color="yellow" longness="short" />
             </Flex>
           </Col>
-          <Col xs={12} sm={4}>
+          <Col xs={12}  sm={12}  lg={4}>
             <Flex className="card-item" justify="center" vertical="column">
               <img src={card3} alt="" />
               <Button text="LV UP" color="orange" longness="short" />
             </Flex>
           </Col>
-          <Col xs={12} sm={4}>
+          <Col xs={12}  sm={12}  lg={4}>
             <Flex className="card-item" justify="center" vertical="column">
               <img src={card4} alt="" />
               <Button text="Staking" color="yellow" longness="short" />
             </Flex>
           </Col>
-          <Col xs={12} sm={4}>
+          <Col xs={12}  sm={12}  lg={4}>
             <Flex className="card-item" justify="center" vertical="column">
               <img src={card5} alt="" />
               <Button text="UNSTAKE" color="blue" longness="short" />
             </Flex>
           </Col>
-          <Col xs={12} sm={4}>
+          <Col xs={12}  sm={12}  lg={4}>
             <Flex className="card-item" justify="center" vertical="column">
               <img src={card1} alt="" />
               <Button text="Staking" color="yellow" longness="short" />
             </Flex>
           </Col>
-          <Col xs={12} sm={4}>
+          <Col xs={12}  sm={12}  lg={4}>
             <Flex className="card-item" justify="center" vertical="column">
               <img src={card2} alt="" />
               <Button text="Staking" color="yellow" longness="short" />
             </Flex>
           </Col>
-          <Col xs={12} sm={4}>
+          <Col xs={12}  sm={12}  lg={4}>
             <Flex className="card-item" justify="center" vertical="column">
               <img src={card3} alt="" />
               <Button text="LV UP" color="orange" longness="short" />
             </Flex>
           </Col>
-          <Col xs={12} sm={4}>
+          <Col xs={12}  sm={12}  lg={4}>
             <Flex className="card-item" justify="center" vertical="column">
               <img src={card4} alt="" />
               <Button text="Staking" color="yellow" longness="short" />
             </Flex>
           </Col>
-          <Col xs={12} sm={4}>
+          <Col xs={12}  sm={12}  lg={4}>
             <Flex className="card-item" justify="center" vertical="column">
               <img src={card5} alt="" />
               <Button text="UNSTAKE" color="blue" longness="short" />
             </Flex>
           </Col>
-          <Col xs={12} sm={4}>
+          <Col xs={12}  sm={12}  lg={4}>
             <Flex className="card-item" justify="center" vertical="column">
               <img src={card1} alt="" />
               <Button text="Staking" color="yellow" longness="short" />
             </Flex>
           </Col>
-          <Col xs={12} sm={4}>
+          <Col xs={12}  sm={12}  lg={4}>
             <Flex className="card-item" justify="center" vertical="column">
               <img src={card2} alt="" />
               <Button text="Staking" color="yellow" longness="short" />
             </Flex>
           </Col>
-          <Col xs={12} sm={4}>
+          <Col xs={12}  sm={12}  lg={4}>
             <Flex className="card-item" justify="center" vertical="column">
               <img src={card3} alt="" />
               <Button text="LV UP" color="orange" longness="short" />
             </Flex>
           </Col>
-          <Col xs={12} sm={4}>
+          <Col xs={12}  sm={12}  lg={4}>
             <Flex className="card-item" justify="center" vertical="column">
               <img src={card4} alt="" />
               <Button text="Staking" color="yellow" longness="short" />
             </Flex>
           </Col>
-          <Col xs={12} sm={4}>
+          <Col xs={12}  sm={12}  lg={4}>
             <Flex className="card-item" justify="center" vertical="column">
               <img src={card5} alt="" />
               <Button text="UNSTAKE" color="blue" longness="short" />
@@ -387,15 +399,15 @@ export default function Detail() {
       >
         <Flex justify="center" vertical="column">
           <Row>
-            <Col xs={24} sm={12} className="modal-card">
+            <Col xs={24}  sm={24}  lg={12} className="modal-card">
               <div className="modal-card-inner">
                 <CardCorner />
                 <img src={card3} width={192} alt="" />
               </div>
             </Col>
             <Col
-              xs={24}
-              sm={12}
+              xs={24}  sm={24} 
+              lg={12}
               style={{
                 flex: 1,
                 padding: "15px 15px 21px ",
@@ -444,15 +456,15 @@ export default function Detail() {
       >
         <Flex justify="center" vertical="column">
           <Row>
-            <Col xs={24} sm={12} className="modal-card">
+            <Col xs={24}  sm={24}  lg={12} className="modal-card">
               <div className="modal-card-inner">
                 <CardCorner />
                 <img src={card3} width={192} alt="" />
               </div>
             </Col>
             <Col
-              xs={24}
-              sm={12}
+              xs={24}  sm={24} 
+              lg={12}
               style={{
                 flex: 1,
                 padding: "15px 15px 21px ",
@@ -485,7 +497,7 @@ export default function Detail() {
             </Col>
           </Row>
           <Row justify="center">
-            <Col xs={24} sm={18}>
+            <Col xs={24}  sm={24}  lg={18}>
               <Flex justify="center">
                 <div className="modal-text1">LV 7 →</div>
                 <div className="modal-text4">&nbsp;LV 8</div>

@@ -14,10 +14,10 @@ export default function Assets() {
   return (
     <div className="assets padding-top-80 padding-bottom-80">
       <Row  gutter={16}>
-        <Col style={{marginTop:'16px'}} className="gutter-row" xs={{ flex: "100%" }} sm={{ flex: "75%" }}>
+        <Col style={{marginTop:'16px'}} className="gutter-row"  xs={24}  sm={24}  lg={18}>
           <InputCard />
         </Col>
-        <Col style={{marginTop:'16px'}} className="gutter-row" xs={{ flex: "100%" }} sm={{ flex: "25%" }}>
+        <Col style={{marginTop:'16px'}} className="gutter-row" xs={24}  sm={24}  lg={6}>
           <BoxCard title="Starter Pack"  />
         </Col>
       </Row>
