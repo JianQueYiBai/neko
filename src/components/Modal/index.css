@@ -41,6 +41,7 @@
   font-family: BIG SHOT;
   font-weight: 400;
   word-wrap: break-word;
+  text-align: center;
 }
 
 .modal-text2 {
@@ -117,4 +118,14 @@
      font-weight: 400;
      letter-spacing: 0.10px;
      word-wrap: break-word;
+  }
+
+  .modal-text10 {
+    color: #FBA323;
+     font-size: 14px;
+     font-family: BIG SHOT;
+     font-weight: 400;
+     letter-spacing: 0.10px;
+     word-wrap: break-word;
+     text-align: center;
   }
